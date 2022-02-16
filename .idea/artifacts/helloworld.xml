@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" build-on-make="true" name="helloworld">
+    <output-path>$PROJECT_DIR$/out/artifacts/helloworld</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="servlet-api-6.0.37" />
+        </element>
+        <element id="directory" name="classes">
+          <element id="module-output" name="BackendJava" />
+        </element>
+        <element id="file-copy" path="$PROJECT_DIR$/webapp/WEB-INF/web.xml" />
+      </element>
+      <element id="file-copy" path="$PROJECT_DIR$/webapp/index.html" />
+    </root>
+  </artifact>
+</component>
