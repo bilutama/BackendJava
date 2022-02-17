@@ -12,7 +12,7 @@ public class HelloWorldServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        String servletMessage = "<<This is plain text response example>>";
+        String servletMessage = "<<This is a plain text response example>>";
         response.getOutputStream().write(servletMessage.getBytes(StandardCharsets.UTF_8));
         response.getOutputStream().flush();
         response.getOutputStream().close();
